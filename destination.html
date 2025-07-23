@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations - Explore Kenya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.logo span {
+  color: teal;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: teal;
+}   
+</style>
+  <header>
+    <div class="logo">Explore<span>Kenya</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="traveltips.html">traveltips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+        
+    </nav>
+  </header>
+
+  <section class="relative h-80 bg-cover bg-center flex items-center justify-center text-center" style="background-image: url(bichi2.jpg.jpg);">
+    <div class="bg-black bg-opacity-60 p-6 rounded-lg text-white">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Top Kenyan Destinations</h1>
+      <p class="text-lg">From the savannah to the coast, discover Kenya's best spots.</p>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Featured Destinations</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="maasaimara.jpg" alt="Maasai Mara" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-1">Maasai Mara</h3>
+          <p class="text-sm text-gray-600 mb-3">Witness the Great Migration and see the Big Five in their natural habitat.</p>
+          <a href="maasaimara.html" class="inline-block bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">View Details</a>
+        </div>
+      </div>
+      
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="diani.jpg" alt="Diani Beach" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-1">Diani Beach</h3>
+          <p class="text-sm text-gray-600 mb-3">Relax on pristine white sands and enjoy water sports on the Indian Ocean.</p>
+          <a href="dianibeach.html" class="inline-block bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">View Details</a>
+        </div>
+      </div>
+    
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="mtkenya.jpg" alt="Mt. Kenya" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-1">Mt. Kenya</h3>
+          <p class="text-sm text-gray-600 mb-3">Trek Africa's second-highest peak and explore stunning alpine landscapes.</p>
+          <a href="mtkenya.html" class="inline-block bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">View Details</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="text-center py-12 bg-red-500 text-white">
+    <h3 class="text-2xl font-bold mb-2">Ready to start your adventure?</h3>
+    <p class="mb-4">Pick your dream destination and book your trip today.</p>
+    <a href="booking.html" class="bg-white text-red-500 font-bold py-2 px-6 rounded hover:bg-gray-100">Start Booking</a>
+  </section>
+
+  <footer class="bg-black text-white text-center py-6 text-sm">
+    <p>&copy; 2025 Explore Kenya. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

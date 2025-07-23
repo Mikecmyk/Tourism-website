@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Kenya - Tourism</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+} 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.logo span {
+  color: teal;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: teal;
+}
+.hero {
+  background: url(kinyama.jpg.jpg)center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.hero-text p {
+  margin-bottom: 20px;
+}
+.btn {
+  background: teal;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #008080;
+}
+
+.popular-destinations {
+  padding: 50px;
+  text-align: center;
+}
+.popular-destinations h2 {
+  margin-bottom: 30px;
+}
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  padding: 15px;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+
+    </style>
+  <header>
+    <div class="logo">Explore<span>Kenya</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="traveltips.html">traveltips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+        
+    </nav>
+  </header>
+
+ <section class="hero">
+  <div class="hero-text">
+    <h1>Discover Kenya's Hidden Gems</h1>
+    <p>Book your next adventure with us and explore breathtaking destinations.</p>
+    <a href="destination.html" class="btn">Explore Now</a>
+  </div>
+</section>
+
+
+  <section class="popular-destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destinations-grid">
+      <div class="card">
+        <img src="maasaimara.jpg" alt="Maasai Mara">
+        <h3>Maasai Mara</h3>
+      </div>
+      <div class="card">
+        <img src="diani.jpg" alt="Diani Beach">
+        <h3>Diani Beach</h3>
+      </div>
+      <div class="card">
+        <img src="mtkenya.jpg" alt="Mount Kenya">
+        <h3>Mount Kenya</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Explore Kenya. All rights reserved.</p>
+  </footer>
+</body>
+</html>

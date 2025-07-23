@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Explore Kenya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+    body {
+      background: url(simba.jpg.jpg) no-repeat center center/cover;
+    }
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.logo span {
+  color: teal;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: teal;
+}
+    .overlay {
+      background: rgba(0,0,0,0.65);
+      min-height: 100vh;
+      width: 100%;
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<header>
+    <div class="logo">Explore<span>Kenya</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="traveltips.html">traveltips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+        
+    </nav>
+  </header>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold text-yellow-300 drop-shadow">About Explore Kenya</h1>
+      <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-200">
+        We help travelers experience Kenya the right way: authentic, safe, and unforgettable.
+      </p>
+    </header>
+
+    <main id="main" class="max-w-6xl mx-auto px-4 pb-24 space-y-24">
+
+      <section>
+        <h2 class="text-3xl font-bold text-yellow-300 text-center mb-8">Our Mission</h2>
+        <div class="glass-card rounded-2xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto text-center">
+          <p class="text-gray-200 text-lg leading-relaxed">
+            To connect the world with Kenya's breathtaking landscapes, wildlife, coastline, and cultures
+            through trusted local partners, transparent pricing, and traveler first experiences.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-3xl font-bold text-yellow-300 text-center mb-10">Why Travel With Us?</h2>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="glass-card p-6 rounded-xl text-center">
+            <h3 class="text-xl font-semibold text-yellow-200 mb-2">Local Experts</h3>
+            <p class="text-gray-200 text-sm">Kenyan guides & community partners who know the land, language & culture.</p>
+          </div>
+          <div class="glass-card p-6 rounded-xl text-center">
+            <h3 class="text-xl font-semibold text-yellow-200 mb-2">Flexible Packages</h3>
+            <p class="text-gray-200 text-sm">Budget to luxury. Solo, couple, squad, or group tours your call.</p>
+          </div>
+          <div class="glass-card p-6 rounded-xl text-center">
+            <h3 class="text-xl font-semibold text-yellow-200 mb-2">Verified Experiences</h3>
+            <p class="text-gray-200 text-sm">We vet camps, lodges & activities so you get quality & safety.</p>
+          </div>
+          <div class="glass-card p-6 rounded-xl text-center">
+            <h3 class="text-xl font-semibold text-yellow-200 mb-2">24/7 Support</h3>
+            <p class="text-gray-200 text-sm">We’ve got you from airport pickup to emergency help on the road.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <h2 class="text-3xl font-bold text-yellow-300 mb-6">Where We Operate</h2>
+        <p class="text-gray-200 mb-6 max-w-2xl mx-auto">
+          We plan trips across Kenya: Maasai Mara, Diani Beach, Mt. Kenya, Amboseli, Nairobi, and more. Use the map below to explore key regions.
+        </p>
+        <div class="glass-card rounded-2xl shadow-lg p-0 overflow-hidden max-w-4xl mx-auto">
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+            <iframe
+              src="https://www.google.com/maps?q=Kenya&output=embed"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Interactive map of Kenya">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <h2 class="text-3xl font-bold text-yellow-300 mb-4">Ready to Explore?</h2>
+        <p class="text-gray-200 mb-8 max-w-xl mx-auto">
+          Tell us where you want to go and we’ll build a custom Kenya trip for you safaris, beaches, mountains, culture, you name it.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="booking.html" class="bg-yellow-300 text-black font-bold px-8 py-3 rounded-xl hover:bg-yellow-400">Plan a Trip</a>
+          <a href="contact.html" class="bg-gray-800 text-yellow-300 font-bold px-8 py-3 rounded-xl hover:bg-gray-700">Contact Us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center mt-16 pb-8 text-sm text-gray-300">
+      <p>© 2025 Explore Kenya. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

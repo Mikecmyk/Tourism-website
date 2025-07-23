@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking - Explore Kenya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+    body {
+      background: url(bookings.jpg.jpg) no-repeat center center/cover;
+    }
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.logo span {
+  color: teal;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: teal;
+}
+    .overlay {
+      background: rgba(0,0,0,0.65);
+      min-height: 100vh;
+      width: 100%;
+    }
+    .glass-card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<header>
+    <div class="logo">Explore<span>Kenya</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="traveltips.html">traveltips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+        
+    </nav>
+  </header>
+
+      <h1 class="text-2xl md:text-2xl font-extrabold text-yellow-300 drop-shadow">Plan Your Adventure</h1>
+      <p class="mt-3 max-w-2xl mx-auto text-lg text-white-200">Book your dream safari, coastal getaway, or mountain hike. Fill in the form below and we'll craft a personalized trip for you.</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 pb-20">
+      
+      <form action="#" method="POST" class="glass-card p-8 rounded-2xl shadow-xl space-y-6">
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Full Name</label>
+          <input type="text" id="name" name="name" required class="w-full p-3 rounded-md bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300" placeholder="John Doe" />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Email Address</label>
+          <input type="email" id="email" name="email" required class="w-full p-3 rounded-md bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300" placeholder="john@example.com" />
+        </div>
+        <div>
+          <label for="phone" class="block mb-2 font-semibold">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required class="w-full p-3 rounded-md bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300" placeholder="+254 700 000000" />
+        </div>
+        <div>
+          <label for="destination" class="block mb-2 font-semibold">Preferred Destination</label>
+          <select id="destination" name="destination" class="w-full p-3 rounded-md bg-white/10 text-black focus:outline-none focus:ring-2 focus:ring-yellow-300">
+            <option value="">Select a destination</option>
+            <option>Maasai Mara</option>
+            <option>Diani Beach</option>
+            <option>Mt. Kenya</option>
+            <option>Amboseli</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="start-date" class="block mb-2 font-semibold">Start Date</label>
+            <input type="date" id="start-date" name="start-date" class="w-full p-3 rounded-md bg-white/10 text-white focus:outline-none focus:ring-2 focus:ring-yellow-300" />
+          </div>
+          <div>
+            <label for="end-date" class="block mb-2 font-semibold">End Date</label>
+            <input type="date" id="end-date" name="end-date" class="w-full p-3 rounded-md bg-white/10 text-white focus:outline-none focus:ring-2 focus:ring-yellow-300" />
+          </div>
+        </div>
+        <div>
+          <label for="guests" class="block mb-2 font-semibold">Number of Guests</label>
+          <input type="number" id="guests" name="guests" min="1" value="1" class="w-full p-3 rounded-md bg-white/10 text-white focus:outline-none focus:ring-2 focus:ring-yellow-300" />
+        </div>
+        <div>
+          <label for="notes" class="block mb-2 font-semibold">Special Requests</label>
+          <textarea id="notes" name="notes" rows="4" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300" placeholder="E.g., vegetarian meals, private guide..."></textarea>
+        </div>
+        <button type="submit" class="w-full bg-yellow-300 text-black font-bold py-3 px-6 rounded-md hover:bg-yellow-400">Submit Booking</button>
+      </form>
+    </main>
+
+    
+    <footer class="text-center mt-16 pb-8 text-sm text-gray-300">
+      <p>© 2025 Explore Kenya. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

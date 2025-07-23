@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Explore Kenya</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- my styles -->
+  <style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+    body {
+      background: url(npigie.jpg.jpg) no-repeat center center/cover;
+    }
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.logo span {
+  color: teal;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: teal;
+}
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<header>
+    <div class="logo">Explore<span>Kenya</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="traveltips.html">traveltips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+        
+    </nav>
+  </header>
+  <div class="overlay flex items-center justify-center px-4">
+    
+    
+    <div class="max-w-2xl w-full bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-8 mt-10 mb-10">
+      <h1 class="text-4xl font-bold text-yellow-300 text-center mb-6">Contact Us</h1>
+      <p class="text-center text-gray-200 mb-8">Got questions? We'd love to hear from you! Send us a message below.</p>
+
+      <div class="mb-8">
+        <ul class="space-y-3 text-center">
+          <li><strong>Email:</strong> info@explorekenya.com</li>
+          <li><strong>Phone:</strong> +254 712 345 678</li>
+          <li><strong>Location:</strong> Nairobi, Kenya</li>
+        </ul>
+      </div>
+
+      <form action="#" method="POST" class="space-y-5">
+        <div>
+          <label for="name" class="block mb-1 text-yellow-300">Your Name</label>
+          <input type="text" id="name" name="name" required
+            class="w-full px-4 py-2 rounded-lg bg-gray-100 text-black focus:outline-none focus:ring-2 focus:ring-yellow-300">
+        </div>
+        <div>
+          <label for="email" class="block mb-1 text-yellow-300">Your Email</label>
+          <input type="email" id="email" name="email" required
+            class="w-full px-4 py-2 rounded-lg bg-gray-100 text-black focus:outline-none focus:ring-2 focus:ring-yellow-300">
+        </div>
+        <div>
+          <label for="message" class="block mb-1 text-yellow-300">Your Message</label>
+          <textarea id="message" name="message" rows="4" required
+            class="w-full px-4 py-2 rounded-lg bg-gray-100 text-black focus:outline-none focus:ring-2 focus:ring-yellow-300"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-yellow-300 text-black font-bold py-2 rounded-lg hover:bg-yellow-400 transition">
+          Send Message
+        </button>
+      </form>
+
+      <div class="text-center mt-8">
+        <a href="home.html"
+          class="inline-block bg-gray-800 px-6 py-2 rounded-xl text-yellow-300 hover:bg-gray-700 transition">
+           Back Home
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

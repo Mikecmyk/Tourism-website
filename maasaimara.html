@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maasai Mara - Activities & Experiences</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+    body {
+      background: url(simba.jpg.jpg) no-repeat center center/cover;
+    }
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.logo span {
+  color: teal;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover, nav ul li a.active {
+  color: teal;
+}
+    .overlay {
+      background: rgba(0,0,0,0.65);
+      min-height: 100vh;
+      width: 100%;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      overflow: hidden;
+      border-radius: 0.75rem;
+    }
+    .video-wrap video, .video-wrap img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<header>
+    <div class="logo">Explore<span>Kenya</span></div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="traveltips.html">traveltips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+        
+    </nav>
+  </header>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold text-yellow-300 drop-shadow">Maasai Mara</h1>
+      <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-200">Legendary savannahs, the Great Migration, big cats, hot air balloon safaris & rich Maasai culture. Dive into the activities below.</p>
+    </header>
+
+    <main id="main" class="max-w-6xl mx-auto px-4 pb-20" role="main">
+      <section aria-labelledby="activities-title" class="mb-12 text-center">
+        <h2 id="activities-title" class="text-3xl font-bold text-yellow-300 mb-4">Top Activities in the Mara</h2>
+        <p class="text-gray-200 max-w-3xl mx-auto">Each activity card includes a short silent preview video plus an accessible description. Expand <span class="font-semibold text-yellow-200">Details</span> to read more.</p>
+      </section>
+
+      <div class="grid gap-10 md:grid-cols-2" role="list">
+
+        <article role="listitem" aria-labelledby="act-gamedrive-title" class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6">
+          <h3 id="act-gamedrive-title" class="text-2xl font-semibold text-yellow-300 mb-4">Guided Game Drives & Big Cats</h3>
+          <div class="video-wrap mb-4">
+            <video muted loop autoplay playsinline preload="metadata" poster="images/gamedrive-thumb.jpg" aria-label="Preview: lion pride resting in Maasai Mara grasslands">
+              <source src="simbavidd.jpg.mp4" type="video/mp4" />
+              <img src="images/gamedrive-thumb.jpg" alt="Lion pride in golden grass" />
+            </video>
+          </div>
+          <p class="text-gray-200 mb-4">Early morning & late afternoon drives give you the best chance to see lions, cheetahs, leopards, elephants, and more in golden light.</p>
+          <details class="text-sm">
+            <summary class="cursor-pointer text-yellow-200">Details / Transcript</summary>
+            <div class="mt-2 text-gray-300 space-y-2 max-w-prose">
+              <p>This clip shows a pride of lions lounging after a hunt. Guides maintain safe distances to protect wildlife and visitors.</p>
+              <p>Best time: Dawn & dusk game drives. Dry season (Jul–Oct) increases sightings as grass is shorter.</p>
+            </div>
+          </details>
+        </article>
+
+        <article role="listitem" aria-labelledby="act-migration-title" class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6">
+          <h3 id="act-migration-title" class="text-2xl font-semibold text-yellow-300 mb-4">Great Migration (River Crossing)</h3>
+          <div class="video-wrap mb-4">
+            <video muted loop autoplay playsinline preload="metadata" poster="images/migration-thumb.jpg" aria-label="Preview: wildebeest crossing the Mara River">
+              <source src="bahari.jpg - Made with Clipchamp.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="text-gray-200 mb-4">Watch the beautiful scenes of the river flow its so beautiful.</p>
+          <details class="text-sm">
+            <summary class="cursor-pointer text-yellow-200">Details / Transcript</summary>
+            <div class="mt-2 text-gray-300 space-y-2 max-w-prose">
+              <p>Shot at the Mara River during peak migration. Guides position vehicles at safe, non-disruptive distances. Crossings are unpredictable – patience is key!</p>
+              <p>Peak months: Jul-Sep (sometimes into Oct).</p>
+            </div>
+          </details>
+        </article>
+
+        <article role="listitem" aria-labelledby="act-balloon-title" class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6">
+          <h3 id="act-balloon-title" class="text-2xl font-semibold text-yellow-300 mb-4">Hot Air Balloon Safari</h3>
+          <div class="video-wrap mb-4">
+            <video muted loop autoplay playsinline preload="metadata" poster="images/balloon-thumb.jpg" aria-label="Preview: hot air balloons floating at sunrise over savannah">
+              <source src="baloonhot.jpg - Made with Clipchamp.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="text-gray-200 mb-4">Float silently over the plains at sunrise, then land to a champagne bush breakfast. Epic aerial views of wildlife & rolling savannah.</p>
+          <details class="text-sm">
+            <summary class="cursor-pointer text-yellow-200">Details / Transcript</summary>
+            <div class="mt-2 text-gray-300 space-y-2 max-w-prose">
+              <p>Clip shows sunrise lift-off, sweeping landscape shots, and wildlife herds from above. Accessible to most travelers; weight limits apply.</p>
+              <p>Wear layers - it's cold pre-sunrise. Book early in peak months.</p>
+            </div>
+          </details>
+        </article>
+
+        <article role="listitem" aria-labelledby="act-sundowner-title" class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6 md:col-span-2">
+          <h3 id="act-sundowner-title" class="text-2xl font-semibold text-yellow-300 mb-4">Sundowner Bush Drinks & Dinner</h3>
+          <div class="video-wrap mb-4">
+            <video muted loop autoplay playsinline preload="metadata" poster="images/sundowner-thumb.jpg" aria-label="Preview: safari guests at sunset with campfire and drinks">
+              <source src="kinywaji.jpg - Made with Clipchamp.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="text-gray-200 mb-4">Wrap your safari day with sunset drinks on the open plains, followed by a bush dinner under the stars. Unreal vibes.</p>
+          <details class="text-sm">
+            <summary class="cursor-pointer text-yellow-200">Details / Transcript</summary>
+            <div class="mt-2 text-gray-300 space-y-2 max-w-prose">
+              <p>Expect portable chairs, drinks, and a safe open area chosen by your guides. After sunset, lighting helps guests with low vision move safely.</p>
+              <p>Notify camp of dietary or mobility needs ahead of time – most lodges can accommodate.</p>
+            </div>
+          </details>
+        </article>
+      </div>
+
+      <div class="text-center mt-16">
+        <a href="destination.html" class="inline-block bg-yellow-300 text-black px-6 py-3 rounded-xl text-lg font-bold hover:bg-yellow-400"> Back to Destinations</a>
+      </div>
+    </main>
+
+    <footer class="text-center mt-16 pb-8 text-sm text-gray-300" role="contentinfo">
+      <p>© 2025 Explore Kenya. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
